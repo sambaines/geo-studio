@@ -1,5 +1,9 @@
 ---
+import { Code } from 'astro-expressive-code/components'
 
+export const exampleCode = `console.log('This could come from a file or CMS!');`
+export const fileName = 'example.js'
+export const highlights = ['file', 'CMS']
 ---
 
 <html lang="en">
@@ -12,5 +16,6 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<Code code={exampleCode} lang="js" title={fileName} mark={highlights} />
 	</body>
 </html>

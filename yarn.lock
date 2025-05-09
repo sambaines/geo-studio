@@ -141,6 +141,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ctrl/tinycolor@npm:^4.0.4":
+  version: 4.1.0
+  resolution: "@ctrl/tinycolor@npm:4.1.0"
+  checksum: 10c0/813dd960366df057006a1b93d7403ec7a48db1e79bec846d38fab15a1e0f37efd3ab96b0c780a14867ddc1f4c5a473e403c5c88e96d212c544ad934411e5307f
+  languageName: node
+  linkType: hard
+
 "@emnapi/runtime@npm:^1.2.0":
   version: 1.4.3
   resolution: "@emnapi/runtime@npm:1.4.3"
@@ -322,6 +329,69 @@ __metadata:
   version: 0.25.4
   resolution: "@esbuild/win32-x64@npm:0.25.4"
   conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@expressive-code/core@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "@expressive-code/core@npm:0.41.2"
+  dependencies:
+    "@ctrl/tinycolor": "npm:^4.0.4"
+    hast-util-select: "npm:^6.0.2"
+    hast-util-to-html: "npm:^9.0.1"
+    hast-util-to-text: "npm:^4.0.1"
+    hastscript: "npm:^9.0.0"
+    postcss: "npm:^8.4.38"
+    postcss-nested: "npm:^6.0.1"
+    unist-util-visit: "npm:^5.0.0"
+    unist-util-visit-parents: "npm:^6.0.1"
+  checksum: 10c0/7bf066c3ea1876014e4bc6392b476a44d294fdcc64169759c594976723702b2514a46d813bc121ba0617114a0822378a91fb33a7224214e23d069d043a4c7653
+  languageName: node
+  linkType: hard
+
+"@expressive-code/plugin-collapsible-sections@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "@expressive-code/plugin-collapsible-sections@npm:0.41.2"
+  dependencies:
+    "@expressive-code/core": "npm:^0.41.2"
+  checksum: 10c0/5e792ee0a046b53286772a723cab3862a74c6b6e8be1b12b3e8f4790ec5d06ea06aa1522249097ec7007b1a66a827c6d1081319f62e38e35b64aedbd92935507
+  languageName: node
+  linkType: hard
+
+"@expressive-code/plugin-frames@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "@expressive-code/plugin-frames@npm:0.41.2"
+  dependencies:
+    "@expressive-code/core": "npm:^0.41.2"
+  checksum: 10c0/270bc3b087970879e52425ca90357541901bd38fe3c8043bc9ed21ccf1ad364f1667e9b5672e4cf9791dccade15aac6edd6665abacb33ce71dd8b81759a2b292
+  languageName: node
+  linkType: hard
+
+"@expressive-code/plugin-line-numbers@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "@expressive-code/plugin-line-numbers@npm:0.41.2"
+  dependencies:
+    "@expressive-code/core": "npm:^0.41.2"
+  checksum: 10c0/b021ccee1d9048a8113f160a47f104396ea2c6f660ffc90a0e1804eefd00ef8e0b885bbb02a6fd0f834132914efdeea988474de951a6ae5b9434e649bfb20ac1
+  languageName: node
+  linkType: hard
+
+"@expressive-code/plugin-shiki@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "@expressive-code/plugin-shiki@npm:0.41.2"
+  dependencies:
+    "@expressive-code/core": "npm:^0.41.2"
+    shiki: "npm:^3.2.2"
+  checksum: 10c0/06061ea639fbf8f5fac37cc8cc930a19cb2f725bfe903e24f1029b2efad8750d3d1253cdc8c72b03069952464890b3081ed751969763df9a21a0a566b2a55a71
+  languageName: node
+  linkType: hard
+
+"@expressive-code/plugin-text-markers@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "@expressive-code/plugin-text-markers@npm:0.41.2"
+  dependencies:
+    "@expressive-code/core": "npm:^0.41.2"
+  checksum: 10c0/0514bb0d4a1c0e34bd00fb671cb94c46227f5ec9b6d25ea7605757abe1d5ea63e3c9c45db4c6db5ef5d36bb37a4e4afaca53be8687543e451640fa6cfb28779a
   languageName: node
   linkType: hard
 
@@ -1047,6 +1117,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"astro-expressive-code@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "astro-expressive-code@npm:0.41.2"
+  dependencies:
+    rehype-expressive-code: "npm:^0.41.2"
+  peerDependencies:
+    astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
+  checksum: 10c0/a485e821ee3879bdfb367ea7c76e9fa7c88d0d5b9c5ad5739f0d291090f932cc15812a9de7115c5bcec3dea61a0036fe709526680450c76612a596212e3fb551
+  languageName: node
+  linkType: hard
+
 "astro@npm:^5.7.12":
   version: 5.7.12
   resolution: "astro@npm:5.7.12"
@@ -1156,10 +1237,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bcp-47-match@npm:^2.0.0":
+  version: 2.0.3
+  resolution: "bcp-47-match@npm:2.0.3"
+  checksum: 10c0/ae5c202854df8a9ad4777dc3b49562578495a69164869f365a88c1a089837a9fbbce4c0c44f6f1a5e44c7841f47e91fe6fea00306ca49ce5ec95a7eb71f839c4
+  languageName: node
+  linkType: hard
+
 "blob-to-buffer@npm:^1.2.8":
   version: 1.2.9
   resolution: "blob-to-buffer@npm:1.2.9"
   checksum: 10c0/ff8d3327f030fcd98b28c7557158721bc36b2102452bb4d8808d7bf497a6feee34623a40f80ec8a097851c866369fc76ef948cee4e78373f34738b70ab3f8cf6
+  languageName: node
+  linkType: hard
+
+"boolbase@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "boolbase@npm:1.0.0"
+  checksum: 10c0/e4b53deb4f2b85c52be0e21a273f2045c7b6a6ea002b0e139c744cb6f95e9ec044439a52883b0d74dedd1ff3da55ed140cfdddfed7fb0cccbed373de5dce1bcf
   languageName: node
   linkType: hard
 
@@ -1410,6 +1505,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-selector-parser@npm:^3.0.0":
+  version: 3.1.2
+  resolution: "css-selector-parser@npm:3.1.2"
+  checksum: 10c0/4164e68a3684a834feda10665bc85b107c7fd64625c055dca1eab403169bf531cde3425ac4b869633fe536677a90debb5bc85511ff8f464e3acb8f5cb57c3169
+  languageName: node
+  linkType: hard
+
 "css-tree@npm:^3.0.0":
   version: 3.1.0
   resolution: "css-tree@npm:3.1.0"
@@ -1514,6 +1616,15 @@ __metadata:
   version: 5.2.0
   resolution: "diff@npm:5.2.0"
   checksum: 10c0/aed0941f206fe261ecb258dc8d0ceea8abbde3ace5827518ff8d302f0fc9cc81ce116c4d8f379151171336caf0516b79e01abdc1ed1201b6440d895a66689eb4
+  languageName: node
+  linkType: hard
+
+"direction@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "direction@npm:2.0.1"
+  bin:
+    direction: cli.js
+  checksum: 10c0/dce809431cad978e0778769a3818ea797ebe0bd542c85032ad9ad98971e2021a146be62feb259d7ffe4b76739e07b23e861b29c3f184ac8d38cc6ba956d5c586
   languageName: node
   linkType: hard
 
@@ -1802,6 +1913,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expressive-code@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "expressive-code@npm:0.41.2"
+  dependencies:
+    "@expressive-code/core": "npm:^0.41.2"
+    "@expressive-code/plugin-frames": "npm:^0.41.2"
+    "@expressive-code/plugin-shiki": "npm:^0.41.2"
+    "@expressive-code/plugin-text-markers": "npm:^0.41.2"
+  checksum: 10c0/15d8fd5291eb6c20ebcc6af8d2b570f9acfb4b176ddd9076679af2d74cbff4e9d6ee1a38956eedacc8c63692d615d8486160a42f57e609c6a40f80316efc5cc7
+  languageName: node
+  linkType: hard
+
 "extend@npm:^3.0.0":
   version: 3.0.2
   resolution: "extend@npm:3.0.2"
@@ -1905,7 +2028,10 @@ __metadata:
   resolution: "geo-studio@workspace:."
   dependencies:
     "@astrojs/mdx": "npm:^4.2.6"
+    "@expressive-code/plugin-collapsible-sections": "npm:^0.41.2"
+    "@expressive-code/plugin-line-numbers": "npm:^0.41.2"
     astro: "npm:^5.7.12"
+    astro-expressive-code: "npm:^0.41.2"
   languageName: unknown
   linkType: soft
 
@@ -1993,6 +2119,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hast-util-has-property@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "hast-util-has-property@npm:3.0.0"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+  checksum: 10c0/6e2c0e22ca893c6ebb60f8390e184c4deb041c36d09796756f02cd121c1789c0f5c862ed06caea8f1a80ea8c0ef6a7854dd57946c2eebb76488727bd4a1c952e
+  languageName: node
+  linkType: hard
+
 "hast-util-is-element@npm:^3.0.0":
   version: 3.0.0
   resolution: "hast-util-is-element@npm:3.0.0"
@@ -2032,6 +2167,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hast-util-select@npm:^6.0.2":
+  version: 6.0.4
+  resolution: "hast-util-select@npm:6.0.4"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    "@types/unist": "npm:^3.0.0"
+    bcp-47-match: "npm:^2.0.0"
+    comma-separated-tokens: "npm:^2.0.0"
+    css-selector-parser: "npm:^3.0.0"
+    devlop: "npm:^1.0.0"
+    direction: "npm:^2.0.0"
+    hast-util-has-property: "npm:^3.0.0"
+    hast-util-to-string: "npm:^3.0.0"
+    hast-util-whitespace: "npm:^3.0.0"
+    nth-check: "npm:^2.0.0"
+    property-information: "npm:^7.0.0"
+    space-separated-tokens: "npm:^2.0.0"
+    unist-util-visit: "npm:^5.0.0"
+    zwitch: "npm:^2.0.0"
+  checksum: 10c0/d6829953f829c24ffe465c2b156f6a7cd352f7d9b4d601e0e6ca38b85cc4a720bb9f027d34881c3b2a05f4b55c9375e256dbf43ca88604230da784e1c9c7d03f
+  languageName: node
+  linkType: hard
+
 "hast-util-to-estree@npm:^3.0.0":
   version: 3.1.3
   resolution: "hast-util-to-estree@npm:3.1.3"
@@ -2056,7 +2214,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hast-util-to-html@npm:^9.0.0, hast-util-to-html@npm:^9.0.5":
+"hast-util-to-html@npm:^9.0.0, hast-util-to-html@npm:^9.0.1, hast-util-to-html@npm:^9.0.5":
   version: 9.0.5
   resolution: "hast-util-to-html@npm:9.0.5"
   dependencies:
@@ -2113,7 +2271,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hast-util-to-text@npm:^4.0.2":
+"hast-util-to-string@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "hast-util-to-string@npm:3.0.1"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+  checksum: 10c0/b5fa1912a6ba6131affae52a0f4394406c4c0d23c2b0307f1d69988f1030c7bb830289303e67c5ad8f674f5f23a454c1dcd492c39e45a22c1f46d3c9bce5bd0c
+  languageName: node
+  linkType: hard
+
+"hast-util-to-text@npm:^4.0.1, hast-util-to-text@npm:^4.0.2":
   version: 4.0.2
   resolution: "hast-util-to-text@npm:4.0.2"
   dependencies:
@@ -3326,6 +3493,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nth-check@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "nth-check@npm:2.1.1"
+  dependencies:
+    boolbase: "npm:^1.0.0"
+  checksum: 10c0/5fee7ff309727763689cfad844d979aedd2204a817fbaaf0e1603794a7c20db28548d7b024692f953557df6ce4a0ee4ae46cd8ebd9b36cfb300b9226b567c479
+  languageName: node
+  linkType: hard
+
 "ofetch@npm:^1.4.1":
   version: 1.4.1
   resolution: "ofetch@npm:1.4.1"
@@ -3492,7 +3668,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.3":
+"postcss-nested@npm:^6.0.1":
+  version: 6.2.0
+  resolution: "postcss-nested@npm:6.2.0"
+  dependencies:
+    postcss-selector-parser: "npm:^6.1.1"
+  peerDependencies:
+    postcss: ^8.2.14
+  checksum: 10c0/7f9c3f2d764191a39364cbdcec350f26a312431a569c9ef17408021424726b0d67995ff5288405e3724bb7152a4c92f73c027e580ec91e798800ed3c52e2bc6e
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^6.1.1":
+  version: 6.1.2
+  resolution: "postcss-selector-parser@npm:6.1.2"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10c0/523196a6bd8cf660bdf537ad95abd79e546d54180f9afb165a4ab3e651ac705d0f8b8ce6b3164fb9e3279ce482c5f751a69eb2d3a1e8eb0fd5e82294fb3ef13e
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.38, postcss@npm:^8.5.3":
   version: 8.5.3
   resolution: "postcss@npm:8.5.3"
   dependencies:
@@ -3635,6 +3832,15 @@ __metadata:
   dependencies:
     regex-utilities: "npm:^2.3.0"
   checksum: 10c0/687b3e063d4ca19b0de7c55c24353f868a0fb9ba21512692470d2fb412e3a410894dd5924c91ea49d8cb8fa865e36ec956e52436ae0a256bdc095ff136c30aba
+  languageName: node
+  linkType: hard
+
+"rehype-expressive-code@npm:^0.41.2":
+  version: 0.41.2
+  resolution: "rehype-expressive-code@npm:0.41.2"
+  dependencies:
+    expressive-code: "npm:^0.41.2"
+  checksum: 10c0/041fbe9edfc5fcc3656190bc999f9e33f9b082852f023f9adee4c3d78caf5d37e95fc7687fba19d8772774d7af8ac14d6f029b25de801873c5fd9f1c553f64a6
   languageName: node
   linkType: hard
 
@@ -4001,7 +4207,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:^3.0.0, shiki@npm:^3.2.1":
+"shiki@npm:^3.0.0, shiki@npm:^3.2.1, shiki@npm:^3.2.2":
   version: 3.4.0
   resolution: "shiki@npm:3.4.0"
   dependencies:
@@ -4534,6 +4740,13 @@ __metadata:
     uploadthing:
       optional: true
   checksum: 10c0/f719a6483fd71d0a6d4f2e98ec29721c352618c4f3641f96d0c703866dc13cda071e8afda5a68bac4e7d3880c8eece0edb2057e96ce0ac4fb649998611430a09
+  languageName: node
+  linkType: hard
+
+"util-deprecate@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "util-deprecate@npm:1.0.2"
+  checksum: 10c0/41a5bdd214df2f6c3ecf8622745e4a366c4adced864bc3c833739791aeeeb1838119af7daed4ba36428114b5c67dcda034a79c882e97e43c03e66a4dd7389942
   languageName: node
   linkType: hard
 
