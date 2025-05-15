@@ -1,5 +1,7 @@
 ---
 import { Code } from 'astro-expressive-code/components'
+import '../styles/global.css'
+import { Font } from 'astro:assets';
 
 export const exampleCode = `console.log('This could come from a file or CMS!');`
 export const fileName = 'example.js'
@@ -13,6 +15,8 @@ export const highlights = ['file', 'CMS']
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<!-- Importer for custom fonts via Font API -->
+		<Font cssVariable='--font-nohemi' preload />
 	</head>
 	<body>
 		<h1>Astro</h1>
