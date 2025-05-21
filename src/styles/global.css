@@ -166,8 +166,25 @@
 }
 
 @layer base {
-    h1 {
+    :root {
+        font-size: 16px;
+    }
+    body {
+        padding: 0.5rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-nohemi);
+        font-weight: 700;
     }
 
+    @media screen and (min-width: 768px) {
+        body {
+            padding: 1rem;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        body {
+            padding: 2rem;
+        }
+    }
 }
