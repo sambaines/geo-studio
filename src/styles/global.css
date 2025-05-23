@@ -203,6 +203,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        gap: var(--framework-24);
         padding: var(--framework-8) var(--framework-16);
         height: var(--framework-80);
         background-color: #2a2a2a;
