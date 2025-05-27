@@ -5,20 +5,20 @@ import mdx from '@astrojs/mdx';
 
 import expressiveCode from 'astro-expressive-code';
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    expressiveCode({
-      // Add bundled langs when we add server-side rendering
-      themes: ['tokyo-night', 'one-light'],
-      defaultProps: {
-        wrap: true,
-        overridesByLang: {
-          'bash,sh,zsh': { wrap: false },
-          }
-      }
-    }),
-    mdx()],
+  integrations: [expressiveCode({
+    // Add bundled langs when we add server-side rendering
+    themes: ['tokyo-night', 'one-light'],
+    defaultProps: {
+      wrap: true,
+      overridesByLang: {
+        'bash,sh,zsh': { wrap: false },
+        }
+    }
+  }), mdx(), icon()],
     experimental: {
         fonts: [{
             provider: "local",
@@ -41,4 +41,4 @@ export default defineConfig({
             ]
         }]
     }
-});
+})

@@ -1,15 +1,26 @@
 ---
 import '../styles/global.css'
+import { Icon } from 'astro-icon/components'
 ---
 
-<nav>
-    <ul class="main-nav">
+<nav class="header-nav" role="navigation">
+    <ul>
         <li><a href="/writing">Writing</a></li>
         <li><a href="/experiments">Experiments</a></li>
         <li><a href="/about">About</a></li>
     </ul>
-    <ul class="secondary-nav">
-        <li><a href="/tools">Tools</a></li>
-        <li><a href="/loot">Loot</a></li>
+    <ul>
+        <li><a href="/tools"><Icon name="menu" />Tools</a></li>
+        <li><a href="/loot"><Icon name="menu" />Loot</a></li>
     </ul>
 </nav>
+
+<style>
+    [data-icon="menu"] {
+        font-size: 1.5rem;
+        color: #fff;
+        display: block;
+        margin-right: 8px;
+        margin-top: -2px;
+    }
+</style>

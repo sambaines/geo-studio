@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import { Font } from 'astro:assets';
 import Header from '../components/header.astro';
+import BottomNav from '../components/bottomNav.astro';
 ---
 
 <html lang="en">
@@ -15,7 +16,13 @@ import Header from '../components/header.astro';
 		<Font cssVariable='--font-nohemi' preload />
 	</head>
 	<body>
-        <Header />
-        <slot />
+		<div class="container">
+			<!-- TODO: Add skip link to main content -->
+			<Header />
+			<BottomNav />
+			<main>
+				<slot />
+			</main>
+		</div>
     </body>
 </html>
