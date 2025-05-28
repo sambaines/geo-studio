@@ -16,11 +16,12 @@ import BottomNav from '../components/bottomNav.astro';
 		<Font cssVariable='--font-nohemi' preload />
 	</head>
 	<body>
+		<!-- This is the container for the Game UI style -->
 		<div class="container">
 			<!-- TODO: Add skip link to main content -->
 			<Header />
 			<BottomNav />
-			<main>
+			<main id="main-content">
 				<slot />
 			</main>
 		</div>

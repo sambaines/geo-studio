@@ -240,6 +240,9 @@
         bottom: 0;
         left: 0;
         right: 0;
+        padding-top: var(--framework-8);
+        /* This accounts for Safari bottom bar, fallback for if dvh units don't count*/
+        padding-bottom: calc(var(--framework-8) + env(safe-area-inset-bottom));
 
         & > ul {
             display: flex;
@@ -249,6 +252,7 @@
         }
 
         & > ul > li {
+            /* This sets the width of each bottom nav item */
             width: calc((100vw - var(--framework-16)) / 4);
         }
     }
@@ -256,6 +260,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: var(--framework-12);
         line-height: var(--leading-large);
     }
     .bottom-nav > ul > li > button {
