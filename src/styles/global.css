@@ -207,6 +207,7 @@
         height: calc(100dvh - var(--framework-16));
         border-radius: var(--framework-8);
         position: relative;
+        overflow: hidden;
     }
     header {
         display: flex;
@@ -271,6 +272,14 @@
     a {
         text-decoration: none;
         color: inherit;
+    }
+    main {
+        padding: var(--framework-16);
+        padding-bottom: var(--framework-64);
+        height: calc(100% - var(--framework-80));
+        /* This min-block-size is not useful anymore */
+        /*min-block-size: calc(100dvh - var(--framework-80)); */
+        overflow-y: scroll;
     }
 
 
