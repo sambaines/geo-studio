@@ -190,6 +190,9 @@
         --framework-96: 6rem;
         --framework-128: 8rem;
         --framework-160: 10rem;
+
+        /* Box Shadows */
+        --box-shadow-1: 0px 24px 24px -12px rgba(0, 0, 0, 0.06), 0px 12px 12px -6px rgba(0, 0, 0, 0.06), 0px 6px 6px -3px rgba(0, 0, 0, 0.06), 0px 3px 3px -1.5px rgba(0, 0, 0, 0.06), 0px 1px 1px -0.5px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.06);
     }
     body {
         /* This padding sets the gap around the edge of the game UI*/
@@ -202,12 +205,13 @@
         font-weight: 700;
     }
     .container {
-        border: 1px solid white;
-        background: #2a2a2a;
+        border: 1px solid #2A2928;
+        background: #1F1E1D;
         height: calc(100dvh - var(--framework-16));
         border-radius: var(--framework-8);
         position: relative;
         overflow: hidden;
+        box-shadow: var(--box-shadow-1);
     }
     header {
         display: flex;
@@ -217,8 +221,9 @@
         gap: var(--framework-24);
         padding: var(--framework-8) var(--framework-16);
         height: var(--framework-80);
-        background-color: #2a2a2a;
         border-radius: var(--framework-8) var(--framework-8) 0 0;
+        box-sizing: border-box;
+        background: #1F1E1D;
     }
     .header-nav {
         display: none;
@@ -237,6 +242,7 @@
         display: flex;
     }
     .bottom-nav {
+        background-color: #1F1E1D;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -244,6 +250,7 @@
         padding-top: var(--framework-8);
         /* This accounts for Safari bottom bar, fallback for if dvh units don't count*/
         padding-bottom: calc(var(--framework-8) + env(safe-area-inset-bottom));
+        z-index: 2;
 
         & > ul {
             display: flex;
@@ -275,11 +282,19 @@
     }
     main {
         padding: var(--framework-16);
+
+        /* This padding accounts for bottom nav on mobile */
         padding-bottom: var(--framework-64);
+
         height: calc(100% - var(--framework-80));
         /* This min-block-size is not useful anymore */
         /*min-block-size: calc(100dvh - var(--framework-80)); */
         overflow-y: scroll;
+    }
+
+    /* Animations */
+    @media (prefers-reduced-motion: no-preference) {
+        /* Animations in this section for users who do not prefer reduced motion */
     }
 
 
@@ -311,6 +326,12 @@
         }
         .bottom-nav {
             display: none;
+        }
+        main {
+            padding: var(--framework-32);
+
+            /* This padding accounts for bottom nav on mobile */
+            padding-bottom: var(--framework-64);
         }
     }
     @media screen and (min-width: 1024px) {
