@@ -224,6 +224,7 @@
         border-radius: var(--framework-8) var(--framework-8) 0 0;
         box-sizing: border-box;
         background: #1F1E1D;
+        border-bottom: 1px solid #2A2928;
     }
     .header-nav {
         display: none;
@@ -242,6 +243,7 @@
         display: flex;
     }
     .bottom-nav {
+        border-top: 1px solid #2A2928;
         background-color: #1F1E1D;
         position: absolute;
         bottom: 0;
