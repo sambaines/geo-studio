@@ -220,7 +220,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         gap: var(--framework-24);
-        padding: var(--framework-8) var(--framework-16);
+        padding: var(--framework-16) var(--framework-16);
         height: var(--framework-80);
         border-radius: var(--framework-8) var(--framework-8) 0 0;
         box-sizing: border-box;
