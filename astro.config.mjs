@@ -22,22 +22,52 @@ export default defineConfig({
     experimental: {
         fonts: [{
             provider: "local",
-            name: "Nohemi",
-            cssVariable: "--font-nohemi",
+            name: "Manrope",
+            cssVariable: "--font-manrope",
             variants: [
+                {
+                    weight: 200,
+                    style: "normal",
+                    src: ["./src/fonts/manrope-v15-latin_latin-ext-200.woff2"]
+                },
                 {
                     weight: 400,
                     style: "normal",
-                    src: ["./src/fonts/Nohemi-Regular.woff2"]
+                    src: ["./src/fonts/manrope-v15-latin_latin-ext-regular.woff2"]
+                },
+                {
+                    weight: 800,
+                    style: "normal",
+                    src: ["./src/fonts/manrope-v15-latin_latin-ext-800.woff2"]
+                }
+            ],
+            fallbacks: [
+              "Helvetica", "sans-serif"
+            ]
+        },
+      {
+            provider: "local",
+            name: "Sora",
+            cssVariable: "--font-sora",
+            variants: [
+                {
+                    weight: 200,
+                    style: "normal",
+                    src: ["./src/fonts/sora-v12-latin_latin-ext-200.woff2"]
+                },
+                {
+                    weight: 400,
+                    style: "normal",
+                    src: ["./src/fonts/sora-v12-latin_latin-ext-regular.woff2"]
                 },
                 {
                     weight: 700,
                     style: "normal",
-                    src: ["./src/fonts/Nohemi-SemiBold.woff2"]
+                    src: ["./src/fonts/sora-v12-latin_latin-ext-700.woff2"]
                 }
             ],
             fallbacks: [
-              "Nohemi", "Helvetica", "sans-serif"
+              "Helvetica", "sans-serif"
             ]
         }]
     }
