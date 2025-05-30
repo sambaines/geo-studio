@@ -175,6 +175,7 @@
 
         /* Leading */
         --leading-zero: 100%;
+        --leading-medium: 140%;
         --leading-large: 150%;
 
         /* 8px Framework */
@@ -203,7 +204,9 @@
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-heading);
         font-weight: 800;
+        letter-spacing: -2.88px;
         color: #fff;
+        text-wrap: balance;
     }
     .container {
         border: 1px solid #2A2928;
@@ -307,6 +310,16 @@
         /* This min-block-size is not useful anymore */
         /*min-block-size: calc(100dvh - var(--framework-80)); */
         overflow-y: scroll;
+    }
+    p {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: clamp(var(--framework-16), 2vw, var(--framework-24));
+        letter-spacing: -0.8px;
+        color: #fff;
+        line-height: var(--leading-large);
+        max-width: 72ch;
+        text-wrap: pretty;
     }
 
     /* Animations */
