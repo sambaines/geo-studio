@@ -4,14 +4,14 @@ import { Icon } from 'astro-icon/components'
 ---
 
 <nav class="header-nav" role="navigation">
-    <ul>
-        <li><a href="/writing">Writing</a></li>
-        <li><a href="/experiments">Experiments</a></li>
-        <li><a href="/about">About</a></li>
+    <ul class="left-split" role="menu">
+        <li role="menuitem"><a href="/writing">Writing</a></li>
+        <li role="menuitem"><a href="/experiments">Experiments</a></li>
+        <li role="menuitem"><a href="/about">About</a></li>
     </ul>
-    <ul>
-        <li><a href="/tools"><Icon name="menu" />Tools</a></li>
-        <li><a href="/loot"><Icon name="menu" />Loot</a></li>
+    <ul class="right-split" role="menu">
+        <li role="menuitem"><a href="/tools"><Icon name="menu" />Tools</a></li>
+        <li role="menuitem"><a href="/loot"><Icon name="menu" />Loot</a></li>
     </ul>
 </nav>
 
@@ -21,7 +21,5 @@ import { Icon } from 'astro-icon/components'
         color: #fff;
         display: block;
         margin-right: 8px;
-        /* Lines up icon with label */
-        margin-top: -2px;
     }
 </style>

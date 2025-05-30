@@ -4,13 +4,13 @@ import { Icon } from 'astro-icon/components'
 ---
 
 <nav class="bottom-nav" role="navigation">
-    <ul>
+    <ul role="menu">
         <!-- TODO: Add ARIA labels for bottom nav -->
-        <li><a href="/writing"><Icon name="menu" />Writing</a></li>
-        <li><a href="/experiments"><Icon name="menu" />Experiments</a></li>
-        <li><a href="/about"><Icon name="menu" />About</a></li>
+        <li role="menuitem"><a href="/writing"><Icon name="menu" />Writing</a></li>
+        <li role="menuitem"><a href="/experiments"><Icon name="menu" />Experiments</a></li>
+        <li role="menuitem"><a href="/about"><Icon name="menu" />About</a></li>
         <!--TODO: Add submenu & dialog aria label -->
-        <li><button><Icon name="menu" />More</button></li>
+        <li role="menuitem"><button><Icon name="menu" />More</button></li>
     </ul>
 </nav>
 
